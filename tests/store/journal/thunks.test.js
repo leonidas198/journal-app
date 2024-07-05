@@ -24,12 +24,14 @@ describe('pruebas en journaThunks', () => {
             title: '',
             id: expect.any( String ),
             date: expect.any( Number ),
+            imageUrls: [],
         }) );
         expect( dispatch ).toHaveBeenCalledWith( setActiveNote({
             body: '',
             title: '',
             id: expect.any( String ),
             date: expect.any( Number ),
+            imageUrls: [],
         }) );
         // Borrar de firebase
         const collectionRef = collection( FirebaseDB, `${ uid }/journal/notes`);

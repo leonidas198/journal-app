@@ -89,10 +89,10 @@ describe('Pruebas en LoginPage', () => {
         );
 
         const emailField = screen.getByRole( 'textbox', { name: 'Correo' } );
-        fireEvent.change( emailField, { EventTarget: { name: 'email', value: email } } );
+        fireEvent.change( emailField, { target: { name: 'email', value: email } } );
 
         const passwordField = screen.getByTestId( 'password' );
-        fireEvent.change( passwordField, { EventTarget: { name: 'password', value: password } } );
+        fireEvent.change( passwordField, { target: { name: 'password', value: password } } );
 
         const loginForm = screen.getByLabelText( 'submit-form' );
         fireEvent.submit( loginForm );

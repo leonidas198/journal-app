@@ -23,7 +23,7 @@ export const SideBarItem = ({ title, body, id, date, imageUrls = [] }) => {
     
 
   return (
-    <ListItem disablePadding sx={{ backgroundColor: 'mediumturquoise' }}>
+    <ListItem disablePadding sx={{ backgroundColor: '#dc35' }}>
         <ListItemButton onClick={ onClickNote }>
         <ListItemIcon>
             <TurnedInNot />
